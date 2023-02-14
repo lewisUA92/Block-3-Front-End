@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Setting the meta data for the website -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Setting title of webpage -->
+    <title>Home</title>
+    <!-- Including bootstrap style sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<!-- Creating a body with a dark background -->
+<body class="bg-dark">
+    <!-- Div for the navigation bar -->
+    <div class="navbar navbar-expand-lg navbar-dark" style="background-color: purple;">
+        <!-- Container for elements of the navigation bar -->
+        <div class="container-fluid">
+            <!-- Adding home button with logo -->
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo and company name -->
+                <img src="logo1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                The Music Company
+            </a>
+            <!-- Adding a button to collapse the navigation bar on smaller screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Div for the navigation bar elements -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- List of navigation links to other pages -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Albums.html">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Container for page content -->
+    <!-- Using boostrap rows and colums to configure the page ensuring it will work on all devices -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <!-- Welcome text  -->
+                <h2><span class="text-light">Welcome to The Music Company website where you can buy albums from your favourite artists. Below you can here some of the songs from the albums we sell.</span></h2>
+            </div>
+        </div>
+        <!-- Samples of music sold on the site -->
+        <h1 class="text-light">Samples</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Card to keep all the elements together and uniform, using inline css to change background colour -->
+                <div class="card" style="background-color:rgb(62, 20, 65);">
+                    <!-- Album image at the top of card -->
+                    <img class="card-img-top" src="Album covers/pinkfloyd.jpg" alt="card image cap">
+                    <div class="card-body text-center">
+                        <!-- Name of album and song -->
+                        <h5 class="text-light">Pink Floyd</h5>
+                        <p class="mb-0 text-light">Breath</p>
+                        <!-- Audio player for the song -->
+                        <audio controls style="max-width: 175px;">
+                            <source src="Samples/Pink Floyd Breath.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color:rgb(62, 20, 65);">
+                    <img class="card-img-top" src="Album covers/tameimpala.jpeg" alt="card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="text-light">Tame Impala</h5>
+                        <p class="mb-0 text-light">The Moment</p>
+                        <audio controls style="max-width: 175px;">
+                            <source src="Samples/Tame Impala The Moment.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="background-color:rgb(62, 20, 65);">
+                    <img class="card-img-top" src="Album covers/thebeatles.jpg" alt="card image cap">
+                    <div class="card-body text-center">
+                        <h5 class="text-light">The Beatles</h5>
+                        <p class="mb-0 text-light">Here Comes The Sun</p>
+                        <audio controls style="max-width: 175px;">
+                            <source src="Samples/The Beatles Here Comes The Sun.mp3">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer of the page -->
+    <footer class="fixed-bottom">
+        <div class="container-fluid" style="background-color: black;">
+            <span class="text-light">©️ 2023 Copyright The Music Company :)</span>
+        </div>
+    </footer>
+    <!-- Including bootsrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>    
