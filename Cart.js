@@ -27,7 +27,7 @@ let cart = {
                             <h5 class="card-title">${item.id}</h5>
                             <p class="card-text">£${item.price}</p>
                         </div>
-                        <input id="${item.id} quantity" min="0" name="quantity" value="${item.count}" type="number" class="form-control form-control-sm" style="background-color: darkgrey;"/>
+                        <input id="${item.id}-quantity" min="0" name="quantity" value="${item.count}" type="number" class="form-control form-control-sm" style="background-color: darkgrey;"/>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ let cart = {
         // Go through each item of the cart using a for loop
         for (let i=0;i<cart.items.length;i++){
             let id=cart.items[i].id;
-            let fourmId=id+" quantity";
+            let fourmId=id+"-quantity";
             // Add event listener to the item
             document.getElementById(fourmId).addEventListener('click', function(e) {
                 // Call the update count function to update the count of the item
